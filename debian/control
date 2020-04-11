@@ -1,0 +1,20 @@
+Source: sugosystem
+Section: admin
+Priority: optional
+Maintainer: Reza Zulkarnain <sugosdeveloper@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+
+Package: sugosystem
+Architecture: all
+Depends: python3 (>= 3.3),
+         perl,
+         apt,
+         aptitude,
+         sugos-common,
+         sugos-info,
+         zenity,
+         ${misc:Depends}
+Description: SUGOS System Base Package
+ Used by the desktop and other mint tools to gather
+ information and process common system tasks.

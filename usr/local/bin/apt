@@ -100,7 +100,7 @@ elif argcommand in ("stats", "depends", "rdepends", "policy"):
 elif argcommand in ("changelog", ):
     command = "/usr/lib/python3/dist-packages/mintcommon/apt_changelog.py " + argoptions
 elif argcommand in ("recommends", ):
-    command = "/usr/lib/linuxmint/mintsystem/mint-apt-recommends.py " + argoptions
+    command = "/usr/lib/sugos/sugosystem/mint-apt-recommends.py " + argoptions
 elif argcommand in ("showhold", "hold", "unhold"):
     # apt-mark
     command = "apt-mark %s %s" % (argcommand, argoptions)
@@ -123,7 +123,7 @@ elif argcommand == "version":
         print ("")
     sys.exit(0)
 elif argcommand == "download":
-    command = "/usr/lib/linuxmint/mintsystem/mint-apt-download.py " + argoptions
+    command = "/usr/lib/sugos/sugosystem/mint-apt-download.py " + argoptions
 elif argcommand == "add-repository":
     command = "add-apt-repository %s" % argoptions
 elif argcommand == "search":

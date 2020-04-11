@@ -11,10 +11,8 @@ Depends: python3 (>= 3.3),
          perl,
          apt,
          aptitude,
-         sugos-common,
-         sugos-info,
          zenity,
          ${misc:Depends}
 Description: SUGOS System Base Package
- Used by the desktop and other mint tools to gather
+ Used by the desktop and other SUGOS tools to gather
  information and process common system tasks.

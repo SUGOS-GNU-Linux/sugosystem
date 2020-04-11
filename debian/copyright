@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mintsystem
-Upstream-Contact: Clement Lefebvre <root@linuxmint.com>
-Source: https://github.com/linuxmint/mintsystem
+Upstream-Name: sugosystem
+Upstream-Contact: Reza Zulkarnain <sugosdeveloper@gmail.com>
+Source: https://github.com/SUGOS-GNU-Linux/sugosystem
 
 Files: *
 Copyright: 2008-2014 Clement Lefebvre <root@linuxmint.com>

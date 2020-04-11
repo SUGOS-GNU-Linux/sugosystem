@@ -18,7 +18,7 @@ set -e
 
 case "$1" in
     configure)
-        update-rc.d mintsystem defaults
+        update-rc.d sugosystem defaults
         if which glib-compile-schemas >/dev/null 2>&1
         then
             glib-compile-schemas /usr/share/glib-2.0/schemas
@@ -26,15 +26,15 @@ case "$1" in
         if which systemctl >/dev/null 2>&1
         then
             systemctl daemon-reload || true
-            systemctl reenable mintsystem.service || true
+            systemctl reenable sugosystem.service || true
         fi
-        /usr/lib/linuxmint/mintsystem/mint-adjust.py
+        /usr/lib/sugos/sugosystem/sugos-adjust.py
     ;;
     abort-upgrade|abort-remove|abort-deconfigure)
 
     ;;
     triggered)
-        /usr/lib/linuxmint/mintsystem/mint-adjust.py
+        /usr/lib/sugos/sugosystem/sugos-adjust.py
     ;;
     *)
         echo "postinst called with unknown argument \`$1'" >&2

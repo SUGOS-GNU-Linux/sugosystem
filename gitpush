@@ -22,7 +22,7 @@ git pull
 echo " Git Add Local... "
 git add -A
 echo " Git Commit Local... "
-git commit -am "Uploading"
+git commit -am "Memperbaiki init awal"
 echo " Git Push Local to Github... "
 git push
 echo " Berhasil... "

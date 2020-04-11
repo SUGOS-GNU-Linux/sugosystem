@@ -6,7 +6,7 @@ After=local-fs.target
 Type=simple
 Restart=no
 KillMode=process
-ExecStart=/etc/init.d/mintsystem start
+ExecStart=/etc/init.d/sugosystem start
 
 [Install]
 WantedBy=multi-user.target

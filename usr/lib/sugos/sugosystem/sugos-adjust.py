@@ -92,14 +92,14 @@ class MintSystem():
             # Read configuration
             try:
                 config = configparser.RawConfigParser()
-                config.read('/etc/linuxmint/mintSystem.conf')
+                config.read('/etc/sugos/mintSystem.conf')
                 self.enabled = (config.get('global', 'enabled') == "True")
             except:
                 config = configparser.RawConfigParser()
                 config.add_section('global')
                 config.set('global', 'enabled', 'True')
                 config.add_section('restore')
-                with open('/etc/linuxmint/mintSystem.conf', 'w') as configfile:
+                with open('/etc/sugos/mintSystem.conf', 'w') as configfile:
                     config.write(configfile)
                 self.enabled = True
 
@@ -108,7 +108,7 @@ class MintSystem():
                 self.log("Disabled - Exited")
                 self.quit()
 
-            adjustment_directory = "/usr/share/linuxmint/adjustments/"
+            adjustment_directory = "/usr/share/sugos/adjustments/"
 
             # Perform file execution adjustments
             for filename in os.listdir(adjustment_directory):

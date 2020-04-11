@@ -18,7 +18,7 @@ set -e
 
 case "$1" in
     purge|remove|upgrade|deconfigure)
-		update-rc.d -f mintsystem remove
+		update-rc.d -f sugosystem remove
         ;;
     failed-upgrade)
         ;;

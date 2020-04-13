@@ -13,7 +13,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>
 
 package=sugosystem
-version="sugosystem (8.4.8)"
+version="sugosystem (8.4.9)"
 figlet $package
 echo " Set Remote... "
 git remote set-url origin git@github.com:SUGOS-GNU-Linux/$package.git
@@ -22,7 +22,7 @@ git pull
 echo " Git Add Local... "
 git add -A
 echo " Git Commit Local... "
-git commit -am "Memperbaiki init awal"
+git commit -am "Update $version"
 echo " Git Push Local to Github... "
 git push
 echo " Berhasil... "

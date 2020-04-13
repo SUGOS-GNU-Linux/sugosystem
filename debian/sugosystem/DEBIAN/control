@@ -1,0 +1,11 @@
+Package: sugosystem
+Version: 8.4.8
+Architecture: all
+Maintainer: Reza Zulkarnain <sugosdeveloper@gmail.com>
+Installed-Size: 96
+Depends: python3 (>= 3.3), perl, apt, aptitude, zenity, dconf-gsettings-backend | gsettings-backend
+Section: admin
+Priority: optional
+Description: SUGOS System Base Package
+ Used by the desktop and other SUGOS tools to gather
+ information and process common system tasks.

@@ -1,0 +1,6 @@
+sugosystem: file-in-usr-local usr/local/bin/apt
+sugosystem: file-in-usr-local usr/local/bin/highlight-sugos
+sugosystem: file-in-usr-local usr/local/bin/sugos-sha256sum
+sugosystem: file-in-usr-local usr/local/bin/search
+sugosystem: dir-in-usr-local usr/local/bin/
+sugosystem: package-installs-apt-preferences etc/apt/preferences.d/official-extra-repositories.pref

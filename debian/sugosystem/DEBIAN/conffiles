@@ -1,0 +1,5 @@
+/etc/apt/apt.conf.d/90sugosystem
+/etc/apt/preferences.d/official-extra-repositories.pref
+/etc/bash_completion.d/apt-sugos
+/etc/init.d/sugosystem
+/etc/sudoers.d/0pwfeedback

@@ -1,3 +1,8 @@
+sugosystem (8.4.9) te; urgency=high
+   [ reza ]
+    * Perbaikan bugs dan perapihan init
+ -- Reza Zulkarnain <sugosdeveloper@gmail.com>  Mon, 13 Apr 2020 22:26:37 +0800 
+
 sugosystem (8.4.8) te; urgency=high
    [ reza ]
     * Pertama membuat init dan core sistem dari SUGOS

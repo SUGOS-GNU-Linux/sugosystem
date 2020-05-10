@@ -9,15 +9,15 @@ import filecmp
 import configparser
 import glob
 
-TIMESTAMPS = "/var/log/mintsystem.timestamps"
+TIMESTAMPS = "/var/log/sugosystem.timestamps"
 
 
-class MintSystem():
+class SugoSystem():
 
     def __init__(self):
         self.start_time = datetime.datetime.now()
-        self.logfile = open("/var/log/mintsystem.log", "w")
-        self.time_log("mintSystem started")
+        self.logfile = open("/var/log/sugosystem.log", "w")
+        self.time_log("sugoSystem started")
         self.executed = []
         self.overwritten = []
         self.skipped = []
@@ -92,14 +92,14 @@ class MintSystem():
             # Read configuration
             try:
                 config = configparser.RawConfigParser()
-                config.read('/etc/sugos/mintSystem.conf')
+                config.read('/etc/sugos/sugoSystem.conf')
                 self.enabled = (config.get('global', 'enabled') == "True")
             except:
                 config = configparser.RawConfigParser()
                 config.add_section('global')
                 config.set('global', 'enabled', 'True')
                 config.add_section('restore')
-                with open('/etc/sugos/mintSystem.conf', 'w') as configfile:
+                with open('/etc/sugos/sugoSystem.conf', 'w') as configfile:
                     config.write(configfile)
                 self.enabled = True
 
@@ -240,6 +240,6 @@ class MintSystem():
             print (detail)
             self.log(detail)
 
-mintsystem = MintSystem()
-mintsystem.adjust()
-mintsystem.quit()
+sugosystem = SugoSystem()
+sugosystem.adjust()
+sugosystem.quit()
